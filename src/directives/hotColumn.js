@@ -49,6 +49,10 @@
             }
           });
           settingFactory.mergeSettingsFromScope(column, scope);
+          if (column.type === 'date') {
+            column.correctFormat = true;
+            column.dateFormat = 'MM/DD/YYYY';
+          }
 
           if (!scope.column) {
             scope.column = {};

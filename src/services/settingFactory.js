@@ -215,6 +215,9 @@
         if (settings.indexOf('contextMenuCopyPaste') === -1) {
           settings.push('contextMenuCopyPaste');
         }
+        if (settings.indexOf('search') === -1) {
+          settings.push('search');
+        }
         if (settings.indexOf('handsontable') === -1) {
           settings.push('handsontable');
         }
